@@ -1,0 +1,1 @@
+export { UpcomingСonferences } from "./UpcomingСonferences";

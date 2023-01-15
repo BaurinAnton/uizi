@@ -1,0 +1,16 @@
+.navigation {
+  position: absolute;
+  top: 6.2rem;
+  padding: 1.375rem 1.125rem;
+  background-color: white;
+  .item {
+    margin-bottom: 0.625rem;
+    &:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+  }
+  .link {
+    text-decoration: none;
+    color: #000000;
+  }
+}

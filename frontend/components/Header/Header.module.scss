@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1rem;
+    .left {
+      display: flex;
+      align-items: center;
+      .nameSite {
+        margin-left: 2.6875rem;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      .messenger {
+        margin-right: 1.25rem;
+        &:nth-last-of-type(1) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

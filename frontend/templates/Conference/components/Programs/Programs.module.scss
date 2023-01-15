@@ -1,0 +1,40 @@
+.programs {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.h2 {
+  margin-bottom: 1.75rem;
+}
+
+.listPrograms {
+  margin-top: 3.625rem;
+}
+
+.itemPrograms {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  display: flex;
+  gap: 8rem;
+  border-top: 0.125rem solid #3c3c3c;
+  &:nth-last-of-type(1) {
+    border-bottom: 0.125rem solid #3c3c3c;
+  }
+  @media (max-width: 768px) {
+    gap: 2rem;
+  }
+}
+
+.timeProgram {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: #000000;
+}
+
+.nameProgram {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: #000000;
+}

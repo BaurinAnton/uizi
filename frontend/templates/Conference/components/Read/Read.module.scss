@@ -1,0 +1,36 @@
+.read {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.readList {
+  margin-top: 3.625rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+}
+
+.readLink {
+  position: relative;
+  text-decoration: none;
+}
+
+.readPicture {
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 560 / 242;
+  }
+}
+
+.description {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
+  color: #000000;
+  margin-top: 1.25rem;
+}
