@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_conference_venues",
+  "info": {
+    "displayName": "Venue",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Contact": {
+      "displayName": "Сontact",
+      "type": "component",
+      "repeatable": true,
+      "component": "conference.sontact"
+    },
+    "mapPicture": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

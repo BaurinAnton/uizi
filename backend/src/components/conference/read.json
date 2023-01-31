@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_conference_reads",
+  "info": {
+    "displayName": "Read",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Information": {
+      "displayName": "Information",
+      "type": "component",
+      "repeatable": true,
+      "component": "conference.information"
+    }
+  }
+}

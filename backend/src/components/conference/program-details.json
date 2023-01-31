@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_conference_program_details",
+  "info": {
+    "displayName": "ProgramDetails",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "time": {
+      "type": "string",
+      "required": true
+    },
+    "detail": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.readList {
+  @media (min-width: 1281px) {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  @media (max-width: 1280px) {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.readLink {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.readPicture {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
+  color: #000000;
+  margin-top: 1.25rem;
+}

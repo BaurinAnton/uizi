@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_conference_sontacts",
+  "info": {
+    "displayName": "Сontact",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "contact": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
