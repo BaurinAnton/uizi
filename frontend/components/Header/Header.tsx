@@ -32,16 +32,16 @@ export const Header = () => {
           )}
           {isActiveMenu && <Menu />}
         </div>
-        <div className={style.center}>
+        <Link className={style.center} href="/">
           <div className={style.logo}>
             <Image
               src={LOGO.src}
               alt={LOGO.alt}
               width={LOGO.width}
               height={LOGO.height}
-            ></Image>
+            />
           </div>
-        </div>
+        </Link>
         {windowSize.width && windowSize.width > 768 && (
           <div className={style.right}>
             {SOCIAL_NETWORK.map((messenger, id) => (

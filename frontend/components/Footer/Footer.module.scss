@@ -4,7 +4,12 @@
   padding-bottom: 3.375rem;
   .row:nth-of-type(1) {
     padding-bottom: 1.5rem;
-    border-bottom: 0.125rem solid #d2d2d2;
+    border-bottom: 0.0625rem solid #d2d2d2;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
     .left {
       .logo {
         display: flex;
@@ -24,6 +29,29 @@
         max-width: 33.125rem;
         .title {
           margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+  .right {
+    .list {
+      list-style: none;
+      font-weight: 400;
+      .itemList {
+        margin-bottom: 0.3125rem;
+        &:nth-last-of-type(1) {
+          margin-bottom: 0;
+        }
+        @media (max-width: 768px) {
+          &:nth-of-type(1) {
+            margin-top: 1.5rem;
+          }
+        }
+        .linkList {
+          font-size: 0.8125rem;
+          line-height: 1.125rem;
+          color: #000000;
+          text-decoration: none;
         }
       }
     }

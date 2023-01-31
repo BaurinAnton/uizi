@@ -1,8 +1,39 @@
-.heroConference {
+.mainTemplate {
   padding-top: 6.25rem;
-  margin-bottom: 5rem;
+  margin-top: 0;
 }
 
 .upcomingСonferences {
-  margin: 5rem 0;
+  @media (min-width: 1281px) {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  @media (max-width: 1280px) {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.otherConference {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.otherConferenceLink {
+  color: #000000;
+  font-size: 0.9375rem;
+}
+
+.article {
+  & + & {
+    margin-top: 2.5rem;
+  }
 }

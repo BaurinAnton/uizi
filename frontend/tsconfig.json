@@ -27,7 +27,11 @@
       "@public": ["public"],
       "@public/*": ["public/*"],
       "@types": ["types"],
-      "@types/*": ["types/*"]
+      "@types/*": ["types/*"],
+      "@api": ["api"],
+      "@api/*": ["api/*"],
+      "@utils": ["utils"],
+      "@utils/*": ["utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

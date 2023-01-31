@@ -1,16 +1,31 @@
 import Image from "next/image";
+import Link from "next/link";
+import { TConference } from "@types";
 
 import style from "./CardConference.module.scss";
+import { getLinkImage, getNormalizeDate } from "@utils";
 
 type TProps = {
-  conference: { src: string; alt: string; title: string; data: string };
-  id: number;
+  conference: TConference;
 };
 
-export const CardConference: React.FC<TProps> = ({ conference, id }) => (
-  <div className={style.card} key={`${conference.title}_${id}`}>
-    <Image width={260} height={177} src={conference.src} alt={conference.alt} />
+export const CardConference = ({ conference }: TProps) => (
+  <Link
+    className={style.card}
+    href={`http://localhost:3000/conferences/${conference.slug}`}
+  >
+    <Image
+      width={360}
+      height={300}
+      objectFit="cover"
+      src={getLinkImage(conference.backgroundPicture.data.attributes.url)}
+      alt={
+        conference.backgroundPicture.data.attributes.alternativeText ||
+        "Картинка статьи"
+      }
+      className={style.picture}
+    />
     <h3 className={style.title}>{conference.title}</h3>
-    <div className={style.date}>{conference.data}</div>
-  </div>
+    <div className={style.date}>{getNormalizeDate(conference.date)}</div>
+  </Link>
 );

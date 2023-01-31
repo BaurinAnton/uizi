@@ -42,8 +42,8 @@ const FormAPI = async (req: { body: TDataForms }, res: NextApiResponse) => {
     `;
   try {
     await transporter.sendMail({
-      from: "Uizirut@mail.ru",
-      to: "baurinanton2013@yandex.ru",
+      from: process.env.FROM_EMAIL,
+      to: process.env.TO_EMAIL,
       subject: "Заявка на конференцию",
       html: dataHtml,
     });
