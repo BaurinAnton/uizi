@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conferences",
+  "info": {
+    "singularName": "conference",
+    "pluralName": "conferences",
+    "displayName": "Conference",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "AboutConference": {
+      "type": "component",
+      "repeatable": false,
+      "component": "conference.about-conference"
+    },
+    "CountConference": {
+      "type": "component",
+      "repeatable": true,
+      "component": "conference.count-conference"
+    },
+    "Speakers": {
+      "type": "component",
+      "repeatable": false,
+      "component": "conference.speakers"
+    },
+    "Read": {
+      "type": "component",
+      "repeatable": false,
+      "component": "conference.read"
+    },
+    "Program": {
+      "type": "component",
+      "repeatable": false,
+      "component": "conference.program"
+    },
+    "Organizers": {
+      "type": "component",
+      "repeatable": false,
+      "component": "conference.organizers"
+    },
+    "Venue": {
+      "type": "component",
+      "repeatable": false,
+      "component": "conference.venue"
+    },
+    "backgroundPicture": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    }
+  }
+}

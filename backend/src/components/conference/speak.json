@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_conference_speaks",
+  "info": {
+    "displayName": "Speak",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "subTitle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

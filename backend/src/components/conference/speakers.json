@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_conference_speakers",
+  "info": {
+    "displayName": "Speakers",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "speaker": {
+      "type": "component",
+      "repeatable": true,
+      "component": "conference.speak"
+    }
+  }
+}

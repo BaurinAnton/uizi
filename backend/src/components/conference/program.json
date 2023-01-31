@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_conference_programs",
+  "info": {
+    "displayName": "Program",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "ProgramDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "conference.program-details"
+    }
+  }
+}
