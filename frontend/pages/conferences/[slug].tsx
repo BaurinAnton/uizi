@@ -12,7 +12,7 @@ type TProps = {
   conference: TConferences;
 };
 
-export default function Home({ conference }: TProps) {
+export default function NextConferencePage({ conference }: TProps) {
   return <ConferenceTemplate conference={conference.data[0].attributes} />;
 }
 

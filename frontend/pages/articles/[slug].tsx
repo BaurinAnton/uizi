@@ -12,7 +12,7 @@ type TProps = {
   articles: TArticles;
 };
 
-export default function Home({ articles }: TProps) {
+export default function NextArticlePage({ articles }: TProps) {
   return <ArticleTemplate articles={articles.data[0].attributes} />;
 }
 

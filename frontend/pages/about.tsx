@@ -10,7 +10,7 @@ type TProps = {
   };
 };
 
-export default function About({ about }: TProps) {
+export default function NextAboutPage({ about }: TProps) {
   return <AboutTemplate about={about.data.attributes} />;
 }
 
