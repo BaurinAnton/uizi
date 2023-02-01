@@ -7,7 +7,7 @@ type TProps = {
   articles: TArticles;
 };
 
-export default function Home({ conferences, articles }: TProps) {
+export default function NextHomePage({ conferences, articles }: TProps) {
   return <MainTemplate conferences={conferences} articles={articles} />;
 }
 

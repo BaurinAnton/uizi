@@ -10,7 +10,7 @@ type TProps = {
   };
 };
 
-export default function Contacts({ contact }: TProps) {
+export default function NextContactsPage({ contact }: TProps) {
   return <ContactsTemplate contact={contact.data.attributes} />;
 }
 

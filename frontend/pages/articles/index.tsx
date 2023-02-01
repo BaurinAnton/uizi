@@ -6,7 +6,7 @@ type TProps = {
   articles: TArticles;
 };
 
-export default function Home({ articles }: TProps) {
+export default function NextArticlesPage({ articles }: TProps) {
   return <ArticlesTemplate articles={articles} />;
 }
 

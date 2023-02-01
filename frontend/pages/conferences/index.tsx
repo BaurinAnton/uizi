@@ -6,7 +6,7 @@ type TProps = {
   conferences: TConferences;
 };
 
-export default function Home({ conferences }: TProps) {
+export default function NextConferencesPage({ conferences }: TProps) {
   return <ConferencesTemplate conferences={conferences} />;
 }
 
