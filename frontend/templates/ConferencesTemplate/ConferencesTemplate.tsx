@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { CardConference, Footer, H2, Header } from "@components";
 import { Section, Wrapper } from "@layout";
 import { TConferences } from "@types";
@@ -10,6 +11,9 @@ type TProps = {
 export const ConferencesTemplate = ({ conferences }: TProps) => {
   return (
     <>
+      <Head>
+        <title>Все конференции | Кафедра УиЗИ</title>
+      </Head>
       <Header />
       <main>
         <Section>

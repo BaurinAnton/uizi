@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import { Section, Wrapper } from "@layout";
 import { TArticles, TConferences } from "@types";
 import { Header, Footer, H2, CardConference, CardArticles } from "@components";
@@ -15,6 +16,9 @@ export const MainTemplate = ({ conferences, articles }: TProps) => {
 
   return (
     <>
+      <Head>
+        <title>Кафедра УиЗИ</title>
+      </Head>
       <Header />
       <main>
         <Section className={style.mainTemplate}>
@@ -31,7 +35,7 @@ export const MainTemplate = ({ conferences, articles }: TProps) => {
         </Section>
         <Wrapper>
           <Section>
-            <H2 className={style.title}>Ближайшие конференции</H2>
+            <H2 className={style.title}>Конференции</H2>
             <div className={style.upcomingСonferences}>
               {conferences.data.map((conference, index) => {
                 if (index < maxShowCards)

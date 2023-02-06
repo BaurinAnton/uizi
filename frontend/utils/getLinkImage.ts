@@ -1,5 +1,7 @@
+import { ROUTE_BACKEND } from "@config";
+
 export const getLinkImage = (url: string) => {
-  const linkImage = `http://localhost:1337${url}`;
+  const linkImage = `${ROUTE_BACKEND}${url}`;
 
   return linkImage;
 };

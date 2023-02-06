@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Head from "next/head";
 import { Footer, H2, Header } from "@components";
 import { Section, Wrapper } from "@layout";
 import style from "./ArticleTemplate.module.scss";
-import { getLinkImage, mdToJsx } from "@utils";
+import { mdToJsx } from "@utils";
 import Link from "next/link";
 import { TArticle } from "@types";
 
@@ -13,6 +13,9 @@ type TProps = {
 export const ArticleTemplate = ({ articles }: TProps) => {
   return (
     <>
+      <Head>
+        <title>{articles.title} | Кафедра УиЗИ</title>
+      </Head>
       <Header />
       <Wrapper className={style.wrapper}>
         <Section>
@@ -22,8 +25,8 @@ export const ArticleTemplate = ({ articles }: TProps) => {
               {mdToJsx(articles.description)}
             </div>
           </article>
-          <Link className={style.link} href={`http://localhost:3000/articles`}>
-            К всем статьям
+          <Link className={style.link} href={`/articles`}>
+            Ко всем статьям
           </Link>
         </Section>
       </Wrapper>

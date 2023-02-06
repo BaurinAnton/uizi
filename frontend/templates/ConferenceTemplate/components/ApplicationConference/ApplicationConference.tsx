@@ -6,15 +6,17 @@ import { useSubmitForm } from "./hooks/useSubmitForm";
 import { TDataForms } from "@types";
 import { INPUTS } from "./constants";
 
-export const ApplicationConference = () => {
-  const { inputs, handlerSetInputs, handlerSubmit, isOk } = useSubmitForm();
+type TProps = {
+  nameConference: string;
+};
+
+export const ApplicationConference = ({ nameConference }: TProps) => {
+  const { inputs, handlerSetInputs, handlerSubmit, isOk } =
+    useSubmitForm(nameConference);
 
   const changeInputHandler =
     (name: string) => (e: ChangeEvent<HTMLInputElement>) => {
-      handlerSetInputs({
-        ...inputs,
-        [`${name}`]: e.target.value,
-      } as TDataForms);
+      handlerSetInputs({ [`${name}`]: e.target.value } as TDataForms);
     };
 
   const isAllFieldsAreFilled = () => {

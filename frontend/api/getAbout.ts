@@ -1,5 +1,4 @@
 import { TAbout } from "@types";
-import { env } from "process";
 
 type TProps = {
   data: {
