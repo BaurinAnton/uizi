@@ -1,6 +1,6 @@
-# Проект uizirut.ru
+# Project uizirut.ru
 
-## Данный сайт - информационный, новостной ресурс, в котором находятся конференции, статьи кафедры УИзИ.
+## This site is an informational, news resource, which contains conferences, articles of the department of UISI.
 
 Frontend: Next.js
 
