@@ -1,12 +1,16 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { TDataForms } from "@types";
 
-export const useSubmitForm = () => {
+export const useSubmitForm = (nameConference: string) => {
   const [inputs, setInputs] = useState<TDataForms | null>(null);
   const [isOk, setIsOk] = useState<boolean | null>(null);
 
+  useEffect(() => {
+    handlerSetInputs({ [`nameConference`]: nameConference } as TDataForms);
+  }, []);
+
   const handlerSetInputs = (props: TDataForms) => {
-    setInputs({ ...props });
+    setInputs((inputs) => ({ ...inputs, ...props }));
   };
 
   const handlerSubmit = async (e: FormEvent) => {

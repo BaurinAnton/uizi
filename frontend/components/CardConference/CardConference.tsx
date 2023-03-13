@@ -10,10 +10,7 @@ type TProps = {
 };
 
 export const CardConference = ({ conference }: TProps) => (
-  <Link
-    className={style.card}
-    href={`http://localhost:3000/conferences/${conference.slug}`}
-  >
+  <Link className={style.card} href={`/conferences/${conference.slug}`}>
     <Image
       width={360}
       height={300}

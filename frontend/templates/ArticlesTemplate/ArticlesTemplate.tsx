@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { Footer, H2, Header, CardArticles } from "@components";
 import { Section, Wrapper } from "@layout";
 import { TArticles } from "@types";
@@ -10,6 +11,9 @@ type TProps = {
 export const ArticlesTemplate = ({ articles }: TProps) => {
   return (
     <>
+      <Head>
+        <title>Все статьи | Кафедра УиЗИ</title>
+      </Head>
       <Header />
       <main>
         <Section className={style.articlesTemplate}>

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { Footer, H2, Header } from "@components";
 import { Section, Wrapper } from "@layout";
 import { TAbout } from "@types";
@@ -11,6 +12,9 @@ type TProps = {
 export const AboutTemplate = ({ about }: TProps) => {
   return (
     <>
+      <Head>
+        <title>О сайте | Кафедра УиЗИ</title>
+      </Head>
       <Header />
       <main>
         <Section className={style.contact}>

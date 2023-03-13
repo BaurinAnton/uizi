@@ -13,7 +13,6 @@ type TProps = {
 export const CountConference = ({ countConference }: TProps) => {
   return (
     <Section className={style.countConference}>
-      {/* TODO: В админку добавить картинку фона и бэкграунд колор желтый */}
       <Image
         src={background}
         alt={""}

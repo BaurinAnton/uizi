@@ -31,7 +31,7 @@ export const HeroConference = ({
         <div className={style.wrapper}>
           <div className={style.data}>{normalizeDate}</div>
           <div className={style.description}>{title}</div>
-          <Link href={`conferences/${slug}`} className={style.button}>
+          <Link href={`/conferences/${slug}`} className={style.button}>
             Узнать больше
           </Link>
         </div>

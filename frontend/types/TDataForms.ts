@@ -1,4 +1,5 @@
 export type TDataForms = {
+  nameConference: string;
   fio: string;
   academicDegree: string;
   fullNameOrganization: string;

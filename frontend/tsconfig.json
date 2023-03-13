@@ -31,7 +31,9 @@
       "@api": ["api"],
       "@api/*": ["api/*"],
       "@utils": ["utils"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@config": ["config"],
+      "@config/*": ["config/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
