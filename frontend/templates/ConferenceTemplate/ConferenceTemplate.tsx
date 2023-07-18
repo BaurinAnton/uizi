@@ -23,7 +23,7 @@ export const ConferenceTemplate = ({ conference }: TProps) => {
   const toDay = new Date();
   const dateConference = new Date(conference.date);
   const isUpcomingСonference =
-    toDay.getTime() - dateConference.getTime() > 0 ? true : false;
+    toDay.getTime() - dateConference.getTime() < 0 ? true : false;
 
   return (
     <>
